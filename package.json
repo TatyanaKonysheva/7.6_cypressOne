@@ -8,7 +8,8 @@
     "test-headed-chrome": "cypress run --browser chrome --headed",
     "test-headless-chrome": "cypress run --browser chrome --headless",
     "test-headed-edge": "cypress run --browser edge --headed",
-    "test-headless-edge": "cypress run --browser edge --headless"
+    "test-headless-edge": "cypress run --browser edge --headless",
+    "test-mobile": "npx cypress open --config-file cypress.config.mobile.js"
   },
   "keywords": [],
   "author": "",

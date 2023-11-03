@@ -1,10 +1,9 @@
+//npx cypress open --config-file cypress.config.mobile.js
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  // These settings apply everywhere unless overridden
-  defaultCommandTimeout: 5000,
-  viewportWidth: 1000,
-  viewportHeight: 600,
+  viewportWidth: 375,
+  viewportHeight: 667,
   e2e: {
     baseUrl: "http://localhost:3000",
     retrise: {

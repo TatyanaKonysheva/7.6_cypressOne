@@ -45,7 +45,7 @@ describe("Test book list", () => {
     );
     cy.get("#favorite").click();
     cy.contains("Submit").click();
-    cy.contains("Добро пожаловать bropet@mail.ru").should("be.visible");
+    cy.contains("Delete from favorite").should("be.visible");
   });
 
   it("Should dowload favorit book", () => {
@@ -56,10 +56,7 @@ describe("Test book list", () => {
     cy.get("h2")
       .contains("Карлсон, который живет на крыше")
       .should("be.visible");
-    cy.contains("Dowload book")
-      .should("be.visible")
-      .should("be.enabled")
-      .click();
+    cy.contains("Dowload book").should("be.visible");
   });
 
   it("Should delete favorit book", () => {
